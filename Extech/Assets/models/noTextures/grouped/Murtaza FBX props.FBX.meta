@@ -1,0 +1,288 @@
+fileFormatVersion: 2
+guid: 3b39faac72aca4f298f690384a669671
+timeCreated: 1508676932
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: 1
+    100002: 2
+    100004: 2 1
+    100006: 3
+    100008: 3 1
+    100010: Box001
+    100012: Box001 1
+    100014: Broken Egg
+    100016: Group Of Eggs
+    100018: //RootNode
+    100020: rocks
+    100022: rocks 1
+    100024: Second Egg
+    100026: Smaller Eggs
+    100028: Sphere001
+    100030: Sphere001 1
+    100032: Sphere001 2
+    100034: Sphere002
+    100036: Sphere002 1
+    100038: Sphere003
+    100040: Sphere003 1
+    100042: Sphere004
+    100044: Sphere005
+    100046: Sphere006
+    100048: Sphere006 1
+    100050: Sphere007
+    100052: Sphere007 1
+    100054: Sphere008
+    100056: Sphere008 1
+    100058: Sphere009
+    100060: Tube001
+    100062: Tube002
+    100064: Tube002 1
+    100066: Tube003
+    100068: Tube003 1
+    100070: Tube004
+    100072: Tube005
+    100074: Tube008
+    100076: Tube009
+    100078: Tube010
+    100080: Tube011
+    100082: Tube012
+    100084: Tube013
+    100086: Tube014
+    400000: 1
+    400002: 2
+    400004: 2 1
+    400006: 3
+    400008: 3 1
+    400010: Box001
+    400012: Box001 1
+    400014: Broken Egg
+    400016: Group Of Eggs
+    400018: //RootNode
+    400020: rocks
+    400022: rocks 1
+    400024: Second Egg
+    400026: Smaller Eggs
+    400028: Sphere001
+    400030: Sphere001 1
+    400032: Sphere001 2
+    400034: Sphere002
+    400036: Sphere002 1
+    400038: Sphere003
+    400040: Sphere003 1
+    400042: Sphere004
+    400044: Sphere005
+    400046: Sphere006
+    400048: Sphere006 1
+    400050: Sphere007
+    400052: Sphere007 1
+    400054: Sphere008
+    400056: Sphere008 1
+    400058: Sphere009
+    400060: Tube001
+    400062: Tube002
+    400064: Tube002 1
+    400066: Tube003
+    400068: Tube003 1
+    400070: Tube004
+    400072: Tube005
+    400074: Tube008
+    400076: Tube009
+    400078: Tube010
+    400080: Tube011
+    400082: Tube012
+    400084: Tube013
+    400086: Tube014
+    2300000: 1
+    2300002: 2
+    2300004: 2 1
+    2300006: 3
+    2300008: 3 1
+    2300010: Box001
+    2300012: Box001 1
+    2300014: rocks
+    2300016: rocks 1
+    2300018: Sphere001
+    2300020: Sphere001 1
+    2300022: Sphere001 2
+    2300024: Sphere002
+    2300026: Sphere002 1
+    2300028: Sphere003
+    2300030: Sphere003 1
+    2300032: Sphere004
+    2300034: Sphere005
+    2300036: Sphere006
+    2300038: Sphere006 1
+    2300040: Sphere007
+    2300042: Sphere007 1
+    2300044: Sphere008
+    2300046: Sphere008 1
+    2300048: Sphere009
+    2300050: Tube001
+    2300052: Tube002
+    2300054: Tube002 1
+    2300056: Tube003
+    2300058: Tube003 1
+    2300060: Tube004
+    2300062: Tube005
+    2300064: Tube008
+    2300066: Tube009
+    2300068: Tube010
+    2300070: Tube011
+    2300072: Tube012
+    2300074: Tube013
+    2300076: Tube014
+    3300000: 1
+    3300002: 2
+    3300004: 2 1
+    3300006: 3
+    3300008: 3 1
+    3300010: Box001
+    3300012: Box001 1
+    3300014: rocks
+    3300016: rocks 1
+    3300018: Sphere001
+    3300020: Sphere001 1
+    3300022: Sphere001 2
+    3300024: Sphere002
+    3300026: Sphere002 1
+    3300028: Sphere003
+    3300030: Sphere003 1
+    3300032: Sphere004
+    3300034: Sphere005
+    3300036: Sphere006
+    3300038: Sphere006 1
+    3300040: Sphere007
+    3300042: Sphere007 1
+    3300044: Sphere008
+    3300046: Sphere008 1
+    3300048: Sphere009
+    3300050: Tube001
+    3300052: Tube002
+    3300054: Tube002 1
+    3300056: Tube003
+    3300058: Tube003 1
+    3300060: Tube004
+    3300062: Tube005
+    3300064: Tube008
+    3300066: Tube009
+    3300068: Tube010
+    3300070: Tube011
+    3300072: Tube012
+    3300074: Tube013
+    3300076: Tube014
+    4300000: Box001
+    4300002: rocks
+    4300004: rocks
+    4300006: Sphere001
+    4300008: Tube001
+    4300010: Tube002
+    4300012: Tube003
+    4300014: Sphere001
+    4300016: Sphere002
+    4300018: Sphere003
+    4300020: 1
+    4300022: 2
+    4300024: 3
+    4300026: Sphere006
+    4300028: Sphere007
+    4300030: Sphere008
+    4300032: Sphere009
+    4300034: Sphere004
+    4300036: Sphere001
+    4300038: Tube002
+    4300040: Tube003
+    4300042: Sphere002
+    4300044: Tube004
+    4300046: Tube005
+    4300048: Sphere003
+    4300050: Tube008
+    4300052: Tube009
+    4300054: Tube010
+    4300056: Sphere005
+    4300058: Tube011
+    4300060: Tube013
+    4300062: Sphere008
+    4300064: Tube012
+    4300066: Sphere007
+    4300068: Tube014
+    4300070: Sphere006
+    4300072: Box001
+    4300074: 2
+    4300076: 3
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

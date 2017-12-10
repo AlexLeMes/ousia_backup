@@ -1,0 +1,199 @@
+fileFormatVersion: 2
+guid: 1a2191b96d2ca3b44ac9f7c17d1cbf28
+timeCreated: 1511269940
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: Arm bands 1
+    100002: armor
+    100004: armor arms
+    100006: armor arms001
+    100008: Belt1
+    100010: body
+    100012: CHaracter
+    100014: //RootNode
+    100016: chest
+    100018: front outfit
+    100020: hand backup
+    100022: kneepads1
+    100024: mask
+    100026: Object0011
+    100028: Object002
+    100030: pants
+    100032: shoe strap 21
+    100034: shoe straps1
+    100036: shoes001
+    100038: shoes002
+    100040: shoes1
+    100042: Sphere0011
+    100044: Sphere002
+    100046: Sphere003
+    100048: straps on thighs
+    400000: Arm bands 1
+    400002: armor
+    400004: armor arms
+    400006: armor arms001
+    400008: Belt1
+    400010: body
+    400012: CHaracter
+    400014: //RootNode
+    400016: chest
+    400018: front outfit
+    400020: hand backup
+    400022: kneepads1
+    400024: mask
+    400026: Object0011
+    400028: Object002
+    400030: pants
+    400032: shoe strap 21
+    400034: shoe straps1
+    400036: shoes001
+    400038: shoes002
+    400040: shoes1
+    400042: Sphere0011
+    400044: Sphere002
+    400046: Sphere003
+    400048: straps on thighs
+    2300000: Arm bands 1
+    2300002: armor
+    2300004: armor arms
+    2300006: armor arms001
+    2300008: Belt1
+    2300010: body
+    2300012: chest
+    2300014: front outfit
+    2300016: hand backup
+    2300018: kneepads1
+    2300020: mask
+    2300022: Object002
+    2300024: pants
+    2300026: shoe strap 21
+    2300028: shoe straps1
+    2300030: shoes001
+    2300032: shoes002
+    2300034: shoes1
+    2300036: Sphere0011
+    2300038: Sphere002
+    2300040: Sphere003
+    2300042: straps on thighs
+    3300000: Arm bands 1
+    3300002: armor
+    3300004: armor arms
+    3300006: armor arms001
+    3300008: Belt1
+    3300010: body
+    3300012: chest
+    3300014: front outfit
+    3300016: hand backup
+    3300018: kneepads1
+    3300020: mask
+    3300022: Object002
+    3300024: pants
+    3300026: shoe strap 21
+    3300028: shoe straps1
+    3300030: shoes001
+    3300032: shoes002
+    3300034: shoes1
+    3300036: Sphere0011
+    3300038: Sphere002
+    3300040: Sphere003
+    3300042: straps on thighs
+    4300000: front outfit
+    4300002: Belt1
+    4300004: Arm bands 1
+    4300006: shoes1
+    4300008: straps on thighs
+    4300010: shoe straps1
+    4300012: shoe strap 21
+    4300014: hand backup
+    4300016: kneepads1
+    4300018: chest
+    4300020: Sphere0011
+    4300022: body
+    4300024: mask
+    4300026: Sphere002
+    4300028: armor
+    4300030: armor arms
+    4300032: pants
+    4300034: Object002
+    4300036: shoes001
+    4300038: shoes002
+    4300040: armor arms001
+    4300042: Sphere003
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.8
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

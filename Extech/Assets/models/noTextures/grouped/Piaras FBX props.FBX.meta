@@ -1,0 +1,239 @@
+fileFormatVersion: 2
+guid: aeb2c4f017a1243db89c7c63960cd2ca
+timeCreated: 1508676939
+licenseType: Pro
+ModelImporter:
+  serializedVersion: 21
+  fileIDToRecycleName:
+    100000: broken dish
+    100002: broken drop ship hull
+    100004: broken dropship hull rear
+    100006: broken monitor 1
+    100008: broken monitor 2 left
+    100010: 'broken monitor 3 left '
+    100012: broken monitor 3 right
+    100014: broken monitor2 right
+    100016: broken thruster
+    100018: cryo pod 1
+    100020: cryo pod 2
+    100022: 'cryo pod 3 '
+    100024: 'cryo pod glass '
+    100026: Cylinder001
+    100028: dropship
+    100030: 'fighter jet '
+    100032: Heavy dropship
+    100034: 'light 1 '
+    100036: 'light 2 '
+    100038: light 3
+    100040: light 4
+    100042: 'monitor new '
+    100044: new dish
+    100046: Object001
+    100048: //RootNode
+    100050: 'replacator 1 '
+    100052: 'replacator 2 '
+    100054: replacator 3
+    100056: replacator 4
+    100058: 'sd panel 1 '
+    100060: 'sd panel 2 '
+    100062: sd panel 3
+    100064: sd panel 4
+    400000: broken dish
+    400002: broken drop ship hull
+    400004: broken dropship hull rear
+    400006: broken monitor 1
+    400008: broken monitor 2 left
+    400010: 'broken monitor 3 left '
+    400012: broken monitor 3 right
+    400014: broken monitor2 right
+    400016: broken thruster
+    400018: cryo pod 1
+    400020: cryo pod 2
+    400022: 'cryo pod 3 '
+    400024: 'cryo pod glass '
+    400026: Cylinder001
+    400028: dropship
+    400030: 'fighter jet '
+    400032: Heavy dropship
+    400034: 'light 1 '
+    400036: 'light 2 '
+    400038: light 3
+    400040: light 4
+    400042: 'monitor new '
+    400044: new dish
+    400046: Object001
+    400048: //RootNode
+    400050: 'replacator 1 '
+    400052: 'replacator 2 '
+    400054: replacator 3
+    400056: replacator 4
+    400058: 'sd panel 1 '
+    400060: 'sd panel 2 '
+    400062: sd panel 3
+    400064: sd panel 4
+    2300000: broken dish
+    2300002: broken drop ship hull
+    2300004: broken dropship hull rear
+    2300006: broken monitor 1
+    2300008: broken monitor 2 left
+    2300010: 'broken monitor 3 left '
+    2300012: broken monitor 3 right
+    2300014: broken monitor2 right
+    2300016: broken thruster
+    2300018: cryo pod 1
+    2300020: cryo pod 2
+    2300022: 'cryo pod 3 '
+    2300024: 'cryo pod glass '
+    2300026: dropship
+    2300028: 'fighter jet '
+    2300030: Heavy dropship
+    2300032: 'light 1 '
+    2300034: 'light 2 '
+    2300036: light 3
+    2300038: light 4
+    2300040: 'monitor new '
+    2300042: new dish
+    2300044: 'replacator 1 '
+    2300046: 'replacator 2 '
+    2300048: replacator 3
+    2300050: replacator 4
+    2300052: 'sd panel 1 '
+    2300054: 'sd panel 2 '
+    2300056: sd panel 3
+    2300058: sd panel 4
+    3300000: broken dish
+    3300002: broken drop ship hull
+    3300004: broken dropship hull rear
+    3300006: broken monitor 1
+    3300008: broken monitor 2 left
+    3300010: 'broken monitor 3 left '
+    3300012: broken monitor 3 right
+    3300014: broken monitor2 right
+    3300016: broken thruster
+    3300018: cryo pod 1
+    3300020: cryo pod 2
+    3300022: 'cryo pod 3 '
+    3300024: 'cryo pod glass '
+    3300026: dropship
+    3300028: 'fighter jet '
+    3300030: Heavy dropship
+    3300032: 'light 1 '
+    3300034: 'light 2 '
+    3300036: light 3
+    3300038: light 4
+    3300040: 'monitor new '
+    3300042: new dish
+    3300044: 'replacator 1 '
+    3300046: 'replacator 2 '
+    3300048: replacator 3
+    3300050: replacator 4
+    3300052: 'sd panel 1 '
+    3300054: 'sd panel 2 '
+    3300056: sd panel 3
+    3300058: sd panel 4
+    4300000: 'sd panel 1 '
+    4300002: 'replacator 1 '
+    4300004: dropship
+    4300006: 'light 2 '
+    4300008: new dish
+    4300010: 'light 1 '
+    4300012: 'cryo pod glass '
+    4300014: broken drop ship hull
+    4300016: broken thruster
+    4300018: broken dropship hull rear
+    4300020: 'fighter jet '
+    4300022: Heavy dropship
+    4300024: broken dish
+    4300026: 'replacator 2 '
+    4300028: light 3
+    4300030: light 4
+    4300032: broken monitor 1
+    4300034: 'monitor new '
+    4300036: broken monitor2 right
+    4300038: broken monitor 2 left
+    4300040: broken monitor 3 right
+    4300042: 'broken monitor 3 left '
+    4300044: sd panel 3
+    4300046: 'sd panel 2 '
+    4300048: sd panel 4
+    4300050: replacator 3
+    4300052: replacator 4
+    4300054: cryo pod 2
+    4300056: cryo pod 1
+    4300058: 'cryo pod 3 '
+    9500000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

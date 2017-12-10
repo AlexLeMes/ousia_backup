@@ -1,0 +1,10 @@
+These are the frames for the animations:
+
+Standing      - 0 to 20
+Walk_Forward  - 40 to 75
+Walk_Right    - 80 to 115
+Walk_Backward - 120 to 155
+Walk_Left     - 160 to 195
+Sprint        - 200 to 235
+Looting       - 240 to 274
+Death         - 280 to 307

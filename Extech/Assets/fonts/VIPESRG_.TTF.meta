@@ -1,0 +1,21 @@
+fileFormatVersion: 2
+guid: 382ffb7a8f8e2804ea6da82f19cdb7f8
+timeCreated: 1512593729
+licenseType: Pro
+TrueTypeFontImporter:
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontName: Viper Squadron
+  fontNames:
+  - Viper Squadron
+  fallbackFontReferences: []
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

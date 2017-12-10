@@ -1,0 +1,19 @@
+Animation timings:
+
+Standing pose: 0 to 20
+Walk_Forward:  40 to 75
+Walk_Right:    80 to 115
+Walk_Backward: 120 to 155
+Walk_Left:     160 to 195
+Looting:       200 to 234
+Death:         240 to 273
+
+
+Shooting is in the other file:
+
+0 to 4
+
+
+Sprinting is in a separate file:
+
+0 to 19

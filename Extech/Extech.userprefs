@@ -1,0 +1,23 @@
+﻿<Properties StartupConfiguration="{49359E72-B849-2741-508F-95E8499A9D80}|">
+  <MonoDevelop.Ide.ItemProperties.Extech PreferredExecutionTarget="Unity.Editor" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/AI/patrol.cs">
+    <Files>
+      <File FileName="Assets/scripts/dev/patrolTest.cs" Line="11" Column="25" />
+      <File FileName="Assets/scripts/weapon.cs" Line="241" Column="49" />
+      <File FileName="Assets/scripts/Bullet.cs" Line="51" Column="89" />
+      <File FileName="Assets/scripts/character.cs" Line="1" Column="1" />
+      <File FileName="Assets/scripts/cameraController.cs" Line="32" Column="65" />
+      <File FileName="Assets/scripts/objectives.cs" Line="22" Column="35" />
+      <File FileName="Assets/scripts/triggerObjective.cs" Line="59" Column="42" />
+      <File FileName="Assets/AI/Chase.cs" Line="1" Column="1" />
+      <File FileName="Assets/AI/Behaviour_tree.cs" Line="33" Column="41" />
+      <File FileName="Assets/AI/patrol.cs" Line="28" Column="49" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MultiItemStartupConfigurations />
+</Properties>
