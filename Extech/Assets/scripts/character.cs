@@ -13,6 +13,8 @@ public class character : MonoBehaviour {
 
     Behaviour_tree BT;
     Rigidbody enemyRB;
+    public GameObject enemyDeathModel;
+    GameObject enemyModel;
 
     public float MaxHealth = 100f;
 
@@ -42,6 +44,8 @@ public class character : MonoBehaviour {
 
         if(this.gameObject.tag == "enemy")
         {
+            enemyModel = this.gameObject;
+
             BT = GetComponent<Behaviour_tree>();
 
             if(BT != null)
@@ -170,7 +174,13 @@ public class character : MonoBehaviour {
 
     public void killEnemy()
     {
-        enemyRB.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezePositionY;
+        if(enemyDeathModel != null)
+        {
+            Instantiate(enemyDeathModel, transform.position, transform.rotation);
+            enemyModel.SetActive(false);
+        }
+        
+        //enemyRB.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezePositionY;
 
         if (BT != null)
         {

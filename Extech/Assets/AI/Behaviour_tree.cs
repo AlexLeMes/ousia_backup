@@ -80,11 +80,6 @@ public class Behaviour_tree : MonoBehaviour
     // Use this for initialization
     public void Update()
     {
-        if(isDead)
-        {
-            enemy.SetInteger("enemyanm", 4);
-            //enemy.SetInteger("enemyanm", 8);
-        }
 
         transform.rotation = Quaternion.Euler(lockrot, transform.rotation.eulerAngles.y, lockrot);
         
