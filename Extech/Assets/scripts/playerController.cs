@@ -156,7 +156,11 @@ public class playerController : MonoBehaviour {
         
         if (Input.GetKey(KeyCode.LeftShift) && canBoost && isMoving)
         {
-            boosting = true;
+            if(stamnia > 0)
+            {
+                boosting = true;
+            }
+            
             _weapon.canShoot = false;
             currentSpeed += boostSpeed;
 
@@ -198,6 +202,11 @@ public class playerController : MonoBehaviour {
         else if (stamnia >= stamCanBeUsedAmount)
         {
             canBoost = true;
+        }
+
+        if(stamnia < 0)
+        {
+            stamnia = 0;
         }
 
         
