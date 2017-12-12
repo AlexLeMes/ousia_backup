@@ -128,7 +128,8 @@ public class playerController : MonoBehaviour {
         {
             isMoving = true;
             canBoost = true;
-            transform.Translate(Vector3.forward * currentSpeed * Time.deltaTime);
+            //transform.Translate(Vector3.forward * currentSpeed * Time.deltaTime);
+            transform.position += transform.forward * Time.deltaTime * currentSpeed;
         }
         else
         {
@@ -138,27 +139,25 @@ public class playerController : MonoBehaviour {
         {
             isMoving = true;
             currentSpeed = moveSpeed;
-            transform.Translate(Vector3.back * currentSpeed * Time.deltaTime);
+            transform.position += -transform.forward * Time.deltaTime * currentSpeed;
         }
         if (Input.GetKey(KeyCode.D))
         {
             isMoving = true;
             currentSpeed = moveSpeed;
-            transform.Translate(Vector3.right * currentSpeed * Time.deltaTime);
+            transform.position += transform.right * Time.deltaTime * currentSpeed;
         }
         if (Input.GetKey(KeyCode.A))
         {
             isMoving = true;
             currentSpeed = moveSpeed;
-            transform.Translate(Vector3.left * currentSpeed * Time.deltaTime);
+            transform.position += -transform.right * Time.deltaTime * currentSpeed;
         }
         
         if (Input.GetKey(KeyCode.LeftShift) && canBoost && isMoving)
         {
             boosting = true;
             _weapon.canShoot = false;
-
-            //anim.Play("Sprint");
             currentSpeed += boostSpeed;
 
             if (currentSpeed > maxSpeed)

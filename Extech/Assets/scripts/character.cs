@@ -12,6 +12,7 @@ public class character : MonoBehaviour {
     cameraController _cameraControls;
 
     Behaviour_tree BT;
+    Rigidbody enemyRB;
 
     public float MaxHealth = 100f;
 
@@ -47,6 +48,8 @@ public class character : MonoBehaviour {
             {
                 BT.enabled = true;
             }
+
+            enemyRB = GetComponent<Rigidbody>();
         }
 
         
@@ -161,13 +164,24 @@ public class character : MonoBehaviour {
         }
         else if(!isPlayer)
         {
-            if(BT != null)
-            {
-                BT.isDead = true;
-                BT.enabled = false;
-            }
-            
+            killEnemy();
         }
+    }
+
+    public void killEnemy()
+    {
+        enemyRB.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ | RigidbodyConstraints.FreezePositionY;
+
+        if (BT != null)
+        {
+            BT.isDead = true;
+            Invoke("disableBT", 1f);
+        }
+    }
+
+    public void disableBT()
+    {
+        BT.enabled = false;
     }
 
     public void killPlayer()

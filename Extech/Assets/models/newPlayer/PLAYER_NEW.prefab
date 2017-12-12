@@ -2742,6 +2742,7 @@ MonoBehaviour:
   maxPowerattack: 100
   powerAttackBar: {fileID: 0}
   powerAttackBarObj: {fileID: 0}
+  powerAttackCanUseValue: 0
   powerAttackChargeRate: 85
   flameBullet: {fileID: 1711865773262750, guid: bef751d2816151e499a1955cbd0eef3f,
     type: 2}
@@ -2752,8 +2753,6 @@ MonoBehaviour:
   flameForce: 800
   plasmaWeaponActive: 0
   chargingEffect: {fileID: 198541686631631280}
-  ammoText: {fileID: 0}
-  currentWeapon: {fileID: 0}
 --- !u!114 &114857720431531950
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3040,17 +3039,17 @@ ParticleSystem:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-  moveWithTransform: 0
+  moveWithTransform: 1
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 2
-  randomSeed: 1309687235
+  randomSeed: 935161127
   InitialModule:
     serializedVersion: 3
     enabled: 1
     startLifetime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 1
+      scalar: 0.3
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -3091,7 +3090,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0
+      scalar: 1
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -4103,7 +4102,7 @@ ParticleSystem:
     sprites:
     - sprite: {fileID: 0}
   VelocityModule:
-    enabled: 1
+    enabled: 0
     x:
       serializedVersion: 2
       minMaxState: 0
@@ -5690,7 +5689,7 @@ ParticleSystem:
     widthOverTrail:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 0.35
+      scalar: 0.1
       minScalar: 1
       maxCurve:
         serializedVersion: 2

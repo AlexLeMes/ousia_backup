@@ -41,7 +41,7 @@ public class weapon : MonoBehaviour {
     public float maxPowerattack;
     public Slider powerAttackBar;
     public GameObject powerAttackBarObj;
-    float powerAttackCanUseValue;
+    public float powerAttackCanUseValue;
     public float powerAttackChargeRate;
 
     public GameObject flameBullet;
@@ -63,11 +63,8 @@ public class weapon : MonoBehaviour {
 
     public ParticleSystem chargingEffect;
 
-    //gunLookat _gunLookat;
     bool canUseFlamethrower;
 
-    public Text ammoText;
-    public Text currentWeapon;
     bool showAmmo = false;
 
 
@@ -93,12 +90,11 @@ public class weapon : MonoBehaviour {
             plasmaInUse[i].SetActive(true);
             fireInUse[i].SetActive(false);
         }
-        //plasmaInUse.SetActive(true);
+
         powerAttackBarObj.SetActive(true);
-        //fireInUse.SetActive(false);
         gasBarObj.SetActive(false);
 
-        currentWeapon.text = "Press '2' for Flamethrower";
+        //currentWeapon.text = "Press '2' for Flamethrower";
 
         gasBar.maxValue = maxGas;
         gasBar.value = gas;
@@ -107,17 +103,11 @@ public class weapon : MonoBehaviour {
 
         powerAttackCanUseValue = powerAttackBar.maxValue;
 
-        //flamethrowerpicked = false;
-
-        //_gunLookat = this.gameObject.GetComponent<gunLookat>();
-        //canUseFlamethrower = _gunLookat.canShoot;
-        //  MAKE THIS BOOL WORK ?
     }
 
 
     void Update()
     {
-        //chargingEffect.Play();
         if (gas <= 0)
         {
             canUseFlamethrower = false;
@@ -127,26 +117,16 @@ public class weapon : MonoBehaviour {
             canUseFlamethrower = true;
         }
 
-        /*
-        if (Input.GetMouseButton(1)) //starts the timer for charging the plasma weapon
-        {
-            ischarging = true;
-        }
-        */
 
-
-        if (Input.GetMouseButton(1) && plasmaWeaponActive) //starts the timer for charging the plasma weapon
+        if (Input.GetMouseButton(1) && plasmaWeaponActive && canShoot) //starts the timer for charging the plasma weapon
         {
-            chargingEffect.Play();
+            chargingEffect.Emit(5);
             powerattacktimer += Time.deltaTime * powerAttackChargeRate;
             ischarging = true;
         }
-        else
-        {
-            chargingEffect.Stop();
-        }
-        
-        if (Input.GetMouseButtonUp(1) && powerattacktimer > powerAttackCanUseValue && ischarging && plasmaWeaponActive)
+
+
+        if (Input.GetMouseButtonUp(1) && powerattacktimer >= powerAttackCanUseValue && ischarging && plasmaWeaponActive)
         {
             shootPowerAttack();
             powerattacktimer = 0;
@@ -157,7 +137,16 @@ public class weapon : MonoBehaviour {
             ischarging = false;
         }
 
-        if (Input.GetMouseButtonDown(0) /*&& powerattacktimer < 2*/ && plasmaWeaponActive)
+        if(ischarging)
+        {
+            chargingEffect.Play();
+        }
+        else if(!ischarging)
+        {
+            chargingEffect.Stop();
+        }
+
+        if (Input.GetMouseButtonDown(0) && plasmaWeaponActive)
         {
             shootPlasmaGun();
         }
@@ -175,7 +164,6 @@ public class weapon : MonoBehaviour {
             plasmaWeaponActive = true;
             showAmmo = false;
 
-            currentWeapon.text = "Press '2' for Flamethrower";
 
             for (int x = 0; x < plasmaInUse.Length; x++)
             {
@@ -183,10 +171,7 @@ public class weapon : MonoBehaviour {
                 fireInUse[x].SetActive(false);
             }
 
-            //fireInUse.SetActive(false);
             gasBarObj.SetActive(false);
-
-            //plasmaInUse.SetActive(true);
             powerAttackBarObj.SetActive(true);
         }
 
@@ -197,20 +182,12 @@ public class weapon : MonoBehaviour {
             flamethrower = true;
             showAmmo = true;
 
-            //gasBar.value = gas / 10;
-
-            currentWeapon.text = "Press '1' for Plasmagun";
-
-
             for (int x = 0; x < plasmaInUse.Length; x++)
             {
                 plasmaInUse[x].SetActive(false);
                 fireInUse[x].SetActive(true);
             }
-            //plasmaInUse.SetActive(false);
             powerAttackBarObj.SetActive(false);
-
-            //fireInUse.SetActive(true);
             gasBarObj.SetActive(true);
         }
 
@@ -267,14 +244,11 @@ public class weapon : MonoBehaviour {
             animShoot = true;
         }
         
-        //weaponAnim.SetBool("shoot", animShoot);
-        //weaponAnim.SetTrigger("shootTrigger");
 
     }
     public void shootPowerAttack()
     {
-        if(canShoot)
-        {
+
             weaponAudio.PlayOneShot(plasmaSFX);
 
             plasmashot = Instantiate(plasmaSpecial, transform.position, Quaternion.identity);
@@ -282,9 +256,8 @@ public class weapon : MonoBehaviour {
             plasmarb.AddForce(transform.forward * force);
 
             animShoot = true;
-        }
-        //weaponAnim.SetBool("shoot", animShoot);
-        //weaponAnim.SetTrigger("shootTrigger");
+        
+
     }
 
 
@@ -294,18 +267,7 @@ public class weapon : MonoBehaviour {
         flameShot = Instantiate(flameBullet, transform.position, Quaternion.identity);
         flameBulletRB = flameShot.GetComponent<Rigidbody>();
         flameBulletRB.AddForce(transform.forward * flameForce);
-   
-    }
 
-    /*
-    IEnumerator shootFlameThrowerBullet()
-    {
-        flameShot = Instantiate(flameBullet, transform.position, Quaternion.identity);
-        flameBulletRB = flameShot.GetComponent<Rigidbody>();
-        flameBulletRB.AddForce(transform.forward * flameForce);
-
-        yield return new WaitForSeconds(5f);
     }
-    */
 }
 

@@ -13,6 +13,8 @@ public class door : MonoBehaviour {
     objectives _objectives;
     GameObject _player;
 
+    bool doorUsed = false;
+
     private void Awake()
     {
         doorAnim = GetComponent<Animator>();
@@ -41,11 +43,14 @@ public class door : MonoBehaviour {
     }
 
     public void openDoor()
-    {
-        doorAnim.enabled = true;
-        //doorAnim.Play();
-        //doorAnim.SetBool(0, true);
-        doorAudio.PlayOneShot(doorSound);
+    {  
+        if(!doorUsed)
+        {
+            doorAnim.enabled = true;
+            doorAudio.PlayOneShot(doorSound);
+        }
+
+        doorUsed = true;
     }
 
 }

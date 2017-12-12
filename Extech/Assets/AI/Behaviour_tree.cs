@@ -10,7 +10,6 @@ public class Behaviour_tree : MonoBehaviour
 {
     public float height;
 
-
     public float attackDamage = 1f;
     public Animator enemy;
     public bool attack;
@@ -58,8 +57,6 @@ public class Behaviour_tree : MonoBehaviour
 
     public void Start()
     {
-        
-
         target = 0;
 
         selector_node selector = new selector_node();
@@ -71,9 +68,9 @@ public class Behaviour_tree : MonoBehaviour
         selector.children.Add(sequenc);
         sequenc.children.Add(new Chase());
         sequenc.children.Add(new attack());
-       selector.children.Add(new flee());
+        selector.children.Add(new flee());
         selector.children.Add(new patrol());
-       selector.children.Add(new idle());
+        selector.children.Add(new idle());
 
         root.BT = this;
 
@@ -83,6 +80,12 @@ public class Behaviour_tree : MonoBehaviour
     // Use this for initialization
     public void Update()
     {
+        if(isDead)
+        {
+            enemy.SetInteger("enemyanm", 4);
+            //enemy.SetInteger("enemyanm", 8);
+        }
+
         transform.rotation = Quaternion.Euler(lockrot, transform.rotation.eulerAngles.y, lockrot);
         
         root.Execute();
@@ -101,13 +104,6 @@ public class Behaviour_tree : MonoBehaviour
             Gizmos.DrawWireSphere(transform.position, enemieawarness);
             Gizmos.color = Color.black;
             Gizmos.DrawWireSphere(transform.position, slowradius);
-
-            
-            
-
-
-
-
         }
 
     }
