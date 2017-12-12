@@ -11,12 +11,14 @@ public class playerController : MonoBehaviour {
         the mouse position is a certain distance away from the player
 */
     mouseLookat _mouseLook;
+    Rigidbody rb;
     public weapon _weapon;
     public Animator anim;
     float inputH = 0f;
     float inputV = 0f;
 
     //PLAYER MOVE SPEED
+    bool isMoving = false;
     public float moveSpeed = 5f;
     //public float rotateSpeed = 90f;
     public float boostSpeed = 3f;
@@ -48,6 +50,7 @@ public class playerController : MonoBehaviour {
 
     private void Awake()
     {
+        rb = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
         _mouseLook = GetComponent<mouseLookat>();
         _camera = camera.GetComponent<cameraController>();
@@ -63,6 +66,8 @@ public class playerController : MonoBehaviour {
     {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+
+        canBoost = false;
 
         anim.SetBool("dead", false);
 
@@ -85,54 +90,37 @@ public class playerController : MonoBehaviour {
         anim.SetFloat("inputH", inputH);
         anim.SetFloat("inputV", inputV);
 
-        /*
-        Debug.DrawRay(transform.position, camera.transform.position, Color.green);
-
-        if ((Vector3.Distance(transform.position, camera.transform.position) > 11) || (!Physics.Raycast(transform.position, camera.transform.position)))
-        {
-            _camera.moveTowardsPlayer = true;
-        }
-        else
-        {
-            _camera.moveTowardsPlayer = false;
-        }
-        */
-        /*
-        if (!Physics.Raycast(transform.position, camera.transform.position))
-        {
-            _camera.moveTowardsPlayer = true;
-        }
-        else
-        {
-            _camera.moveTowardsPlayer = false;
-        }
-        */
-        //Debug.Log(!Physics.Raycast(transform.position, camera.transform.position));
-
-
         //PLAYER KEY INPUT MOVEMENT//
+        
         if (Input.GetKey(KeyCode.W))
         {
-            //anim.Play("Walk_Forward");
+            isMoving = true;
+            canBoost = true;
             transform.Translate(Vector3.forward * currentSpeed * Time.deltaTime);
         }
         if (Input.GetKey(KeyCode.S))
         {
-            //anim.Play("Walk_Backward");
+            isMoving = true;
+            currentSpeed = moveSpeed;
+            canBoost = false;
             transform.Translate(Vector3.back * currentSpeed * Time.deltaTime);
         }
         if (Input.GetKey(KeyCode.D))
         {
-            //anim.Play("Walk_Right");
+            isMoving = true;
+            currentSpeed = moveSpeed;
+            canBoost = false;
             transform.Translate(Vector3.right * currentSpeed * Time.deltaTime);
         }
         if (Input.GetKey(KeyCode.A))
         {
-            //anim.Play("Walk_Left");
+            isMoving = true;
+            currentSpeed = moveSpeed;
+            canBoost = false;
             transform.Translate(Vector3.left * currentSpeed * Time.deltaTime);
         }
-
-        if (Input.GetKey(KeyCode.LeftShift) && canBoost)
+        
+        if (Input.GetKey(KeyCode.LeftShift) && canBoost && isMoving)
         {
             boosting = true;
             _weapon.canShoot = false;

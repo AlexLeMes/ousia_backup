@@ -68,7 +68,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1566848328388438}
   m_LocalRotation: {x: 0.98811245, y: -0.09581135, z: 0.020117773, w: 0.11853005}
-  m_LocalPosition: {x: 0.69, y: -0.01, z: -3.33}
+  m_LocalPosition: {x: -0.68, y: 0.43, z: -2.7}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 4780459974204712}
@@ -80,8 +80,8 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1515518614090182}
-  m_LocalRotation: {x: -0.14501356, y: 0.70015556, z: 0.682758, w: 0.15031599}
-  m_LocalPosition: {x: 139.15, y: 8.26, z: 3.17}
+  m_LocalRotation: {x: -0.71501166, y: 0.0022520605, z: -0.0065187733, w: 0.6990786}
+  m_LocalPosition: {x: 69.51, y: 8.25, z: -52.75}
   m_LocalScale: {x: 0.30667183, y: 0.30667177, z: 0.30667177}
   m_Children:
   - {fileID: 4378286243958146}
@@ -218,7 +218,7 @@ Light:
     m_NearPlane: 0.2
   m_Cookie: {fileID: 0}
   m_DrawHalo: 0
-  m_Flare: {fileID: 0}
+  m_Flare: {fileID: 12100000, guid: 633df5c89a1f97d42b6d328a3456960d, type: 2}
   m_RenderMode: 1
   m_CullingMask:
     serializedVersion: 2

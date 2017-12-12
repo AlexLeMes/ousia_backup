@@ -2464,7 +2464,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 112
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!81 &81465383931737880
 AudioListener:
   m_ObjectHideFlags: 1
@@ -2491,7 +2491,7 @@ AudioSource:
   SpatializePostEffects: 0
   Priority: 110
   DopplerLevel: 1
-  MinDistance: 1
+  MinDistance: 2.5625076
   MaxDistance: 500
   Pan2D: 0
   rolloffMode: 0
@@ -2825,7 +2825,7 @@ MonoBehaviour:
   health: 100
   stamina: 100
   alive: 1
-  moveSpeed: 6
+  moveSpeed: 600
   rotateSpeed: 100
   weaponOneAmmo: 0
   characterHealthBar: {fileID: 0}
@@ -2974,7 +2974,7 @@ MonoBehaviour:
   _weapon: {fileID: 114849389114391654}
   anim: {fileID: 95250728783804334}
   moveSpeed: 5
-  boostSpeed: 7
+  boostSpeed: 2
   staminaBar: {fileID: 0}
   camera: {fileID: 1471066342046052}
   maxStam: 100
