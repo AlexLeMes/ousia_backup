@@ -21,12 +21,13 @@ GameObject:
   - component: {fileID: 4813676925917652}
   - component: {fileID: 33434648188109082}
   - component: {fileID: 23477848119221144}
+  - component: {fileID: 64052506468663992}
   m_Layer: 0
   m_Name: door frame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 4294967295
   m_IsActive: 1
 --- !u!1 &1822252801929452
 GameObject:
@@ -68,7 +69,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1822252801929452}
   m_LocalRotation: {x: -0, y: 0.5013869, z: -0, w: 0.8652233}
-  m_LocalPosition: {x: 72.041, y: 6.27, z: -111.050064}
+  m_LocalPosition: {x: 157.33485, y: 134.25598, z: 5.782051}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4553717056745658}
@@ -180,6 +181,20 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1837965379856682}
   m_Mesh: {fileID: 4300000, guid: b5758064bd3562946aa8b9a24f324175, type: 3}
+--- !u!64 &64052506468663992
+MeshCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1098507549126202}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Convex: 0
+  m_InflateMesh: 0
+  m_SkinWidth: 0.01
+  m_Mesh: {fileID: 4300000, guid: 1a92b7efb7837ef40a582cb2fab3ea44, type: 3}
 --- !u!65 &65930784644108996
 BoxCollider:
   m_ObjectHideFlags: 1
