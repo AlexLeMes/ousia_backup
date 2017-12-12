@@ -24,6 +24,7 @@ public class playerController : MonoBehaviour {
     public float boostSpeed = 3f;
     float maxSpeed = 10f;
     float currentSpeed = 0f;
+    Vector3 direction;
 
     bool canShoot = true;
 
@@ -83,6 +84,14 @@ public class playerController : MonoBehaviour {
 
     void Update()
     {
+        if(rb.velocity.magnitude > 0f)
+        {
+            isMoving = true;
+        }
+        else
+        {
+            isMoving = false;
+        }
 
         inputH = Input.GetAxis("Horizontal");
         inputV = Input.GetAxis("Vertical");
@@ -90,6 +99,29 @@ public class playerController : MonoBehaviour {
         anim.SetFloat("inputH", inputH);
         anim.SetFloat("inputV", inputV);
 
+        /*
+        if (Input.GetKey(KeyCode.W))
+        {
+            canBoost = true;
+            rb.velocity = (transform.rotation * Vector3.forward * currentSpeed * Time.deltaTime);
+        }
+        else
+        {
+            canBoost = false;
+        }
+        if (Input.GetKey(KeyCode.S))
+        {
+            rb.velocity = (transform.rotation * Vector3.back * currentSpeed * Time.deltaTime);
+        }
+        if (Input.GetKey(KeyCode.D))
+        {
+            rb.velocity = (transform.rotation * Vector3.right * currentSpeed * Time.deltaTime);
+        }
+        if (Input.GetKey(KeyCode.A))
+        {
+            rb.velocity = (transform.rotation * Vector3.left * currentSpeed * Time.deltaTime);
+        }
+        */
         //PLAYER KEY INPUT MOVEMENT//
         
         if (Input.GetKey(KeyCode.W))
@@ -98,25 +130,26 @@ public class playerController : MonoBehaviour {
             canBoost = true;
             transform.Translate(Vector3.forward * currentSpeed * Time.deltaTime);
         }
+        else
+        {
+            canBoost = false;
+        }
         if (Input.GetKey(KeyCode.S))
         {
             isMoving = true;
             currentSpeed = moveSpeed;
-            canBoost = false;
             transform.Translate(Vector3.back * currentSpeed * Time.deltaTime);
         }
         if (Input.GetKey(KeyCode.D))
         {
             isMoving = true;
             currentSpeed = moveSpeed;
-            canBoost = false;
             transform.Translate(Vector3.right * currentSpeed * Time.deltaTime);
         }
         if (Input.GetKey(KeyCode.A))
         {
             isMoving = true;
             currentSpeed = moveSpeed;
-            canBoost = false;
             transform.Translate(Vector3.left * currentSpeed * Time.deltaTime);
         }
         
