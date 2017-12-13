@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4987917235721446}
   - component: {fileID: 108580416460315500}
+  - component: {fileID: 95569173602742214}
   m_Layer: 0
   m_Name: Point light
   m_TagString: Untagged
@@ -211,7 +212,7 @@ AudioSource:
       tangentMode: 0
     m_PreInfinity: 2
     m_PostInfinity: 2
-    m_RotationOrder: 4
+    m_RotationOrder: 0
   reverbZoneMixCustomCurve:
     serializedVersion: 2
     m_Curve:
@@ -224,6 +225,23 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!95 &95569173602742214
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1488484219754322}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 1ac3b9585121e914ba66cc88eb0fda40, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!108 &108580416460315500
 Light:
   m_ObjectHideFlags: 1
@@ -347,7 +365,7 @@ ParticleSystem:
   moveWithTransform: 0
   moveWithCustomTransform: {fileID: 0}
   scalingMode: 1
-  randomSeed: 2077709846
+  randomSeed: 226045874
   InitialModule:
     serializedVersion: 3
     enabled: 1

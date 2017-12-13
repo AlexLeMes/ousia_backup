@@ -62,6 +62,7 @@ public class weapon : MonoBehaviour {
     public bool plasmaWeaponActive;
 
     public ParticleSystem chargingEffect;
+    public ParticleSystem shootingPlasmaEffect;
 
     bool canUseFlamethrower;
 
@@ -158,12 +159,9 @@ public class weapon : MonoBehaviour {
         //PLASMA GUN ACTIVE
         if (Input.GetKeyDown(KeyCode.Alpha1))
         {
-            
-
             flamethrower = false;
             plasmaWeaponActive = true;
             showAmmo = false;
-
 
             for (int x = 0; x < plasmaInUse.Length; x++)
             {
@@ -236,6 +234,7 @@ public class weapon : MonoBehaviour {
         if(canShoot)
         {
             weaponAudio.PlayOneShot(plasmaSFX);
+            shootingPlasmaEffect.Emit(15);
 
             plasmashot = Instantiate(plasma, transform.position, Quaternion.identity);
             plasmarb = plasmashot.GetComponent<Rigidbody>();
@@ -248,7 +247,6 @@ public class weapon : MonoBehaviour {
     }
     public void shootPowerAttack()
     {
-
             weaponAudio.PlayOneShot(plasmaSFX);
 
             plasmashot = Instantiate(plasmaSpecial, transform.position, Quaternion.identity);
@@ -256,7 +254,6 @@ public class weapon : MonoBehaviour {
             plasmarb.AddForce(transform.forward * force);
 
             animShoot = true;
-        
 
     }
 
