@@ -112,6 +112,7 @@
     <Compile Include="Assets\scripts\GameController.cs" />
     <Compile Include="Assets\scripts\keycard.cs" />
     <Compile Include="Assets\scripts\LoadingManager.cs" />
+    <Compile Include="Assets\scripts\lookat.cs" />
     <Compile Include="Assets\scripts\MainMenuController.cs" />
     <Compile Include="Assets\scripts\mouseLookat.cs" />
     <Compile Include="Assets\scripts\objectives.cs" />
