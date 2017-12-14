@@ -19,12 +19,6 @@ public class pickups : MonoBehaviour {
 
     [Space(10)]
 
-    [Header("PICKUP AUDIO")]
-    AudioSource pickupAudio;
-    public AudioClip pickupSound;
-
-    [Space(10)]
-
     [Header("MISC")]
     public character _character;
     GameObject _player;
@@ -36,7 +30,6 @@ public class pickups : MonoBehaviour {
 
         _character = _player.GetComponent<character>();
 
-        pickupAudio = GetComponent<AudioSource>();
     }
 
 
@@ -45,11 +38,6 @@ public class pickups : MonoBehaviour {
         if (other.gameObject.tag == "Player")
         {
             Debug.Log("pickup - hit player");
-
-            if(pickupAudio != null)
-            {
-                pickupAudio.PlayOneShot(pickupSound);
-            }
 
             if (healthPickup)
             {
