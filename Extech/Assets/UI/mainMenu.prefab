@@ -1053,37 +1053,19 @@ MonoBehaviour:
     m_BestFit: 0
     m_MinSize: 1
     m_MaxSize: 40
-    m_Alignment: 2
+    m_Alignment: 1
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Wael Fadi Mahrouseh
-
-
-    Murtaza Tiwana
-
-
-    Piaras Cushnan
-
-
-    Thyra Rayne Anstey
-
-
-    Rihab Baklout
-
-
-    Nelusha Lindagedara
-
-
-    Nagi Castillo Faronieya
-
-
-    Yousef Ahmed Mahmoud
-
-
-    Alexander Le Mesurier'
+  m_Text: " Wael Fadi Mahrouseh - ANIMATOR / 3D MODELING\r\nMurtaza Tiwana - ANIMATOR
+    / 3D MODELING\r\nPiaras Cushnan - ANIMATOR / 3D MODELING\r\nThyra Rayne Anstey
+    - ANIMATOR / 3D MODELING\r\nRihab Baklout - ANIMATOR / 3D MODELING\r\nNelusha
+    Lindagedara - ANIMATOR / 3D MODELING\r\nNagi Castillo Faronieya - ANIMATOR / 3D
+    MODELING\r\nYousef Ahmed Mahmoud - PROGRAMMER\r\n\t\t\t\r\nJuan Carlos Tobon -
+    Audio Composer\r\nMishael Thomas - Sound Designer\r\nLauren Gaille Gabat - Poser
+    Design\r\n\nAHMED FOUAD GAMAL - Facilitator\n\n"
 --- !u!114 &114668905729190848
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1509,9 +1491,9 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -9, y: -11.200012}
-  m_SizeDelta: {x: -954.8, y: -123.5}
-  m_Pivot: {x: 1, y: 1}
+  m_AnchoredPosition: {x: 4.7775, y: 25.7}
+  m_SizeDelta: {x: -64.045, y: -134.1}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!224 &224134346433516464
 RectTransform:
   m_ObjectHideFlags: 1
