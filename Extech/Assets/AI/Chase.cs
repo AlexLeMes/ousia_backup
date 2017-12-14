@@ -11,7 +11,7 @@ public class Chase : Node
     
     float maxavoidforce;
     Vector3 target;
-    public float raycastlenght = 1f;
+    public float raycastlenght = 0.1f;
    
     public Vector3 height = new Vector3(0, 2, 0);
 

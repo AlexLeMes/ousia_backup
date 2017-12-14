@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class patrol : Node
 {
-    public float raycastlenght = 2;
+    public float raycastlenght = 0.1f;
     public Vector3 height = new Vector3(0, 2, 0);
 
 

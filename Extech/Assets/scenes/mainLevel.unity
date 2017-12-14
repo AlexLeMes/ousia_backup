@@ -2709,6 +2709,16 @@ Prefab:
       propertyPath: speed
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 114305715965242990, guid: 1f41554e5c392304b998d5b3374348a6,
+        type: 2}
+      propertyPath: maxdistance
+      value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 114305715965242990, guid: 1f41554e5c392304b998d5b3374348a6,
+        type: 2}
+      propertyPath: movespeed
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 136685140483213428, guid: 1f41554e5c392304b998d5b3374348a6, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 1f41554e5c392304b998d5b3374348a6, type: 2}
@@ -3037,6 +3047,11 @@ Prefab:
         type: 2}
       propertyPath: speed
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114305715965242990, guid: 1f41554e5c392304b998d5b3374348a6,
+        type: 2}
+      propertyPath: maxdistance
+      value: 45
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 136685140483213428, guid: 1f41554e5c392304b998d5b3374348a6, type: 2}
@@ -19477,7 +19492,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400236, guid: 6713036011a5a433fab56176edf3b0e6, type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 687957949}
-  m_LocalRotation: {x: 0.29399544, y: 0.64309156, z: 0.64309156, w: -0.29399544}
+  m_LocalRotation: {x: 0.2939954, y: 0.6430915, z: 0.6430915, w: -0.2939954}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 0.50087035, y: 0.5008704, z: 0.5008701}
   m_Children:
@@ -25924,7 +25939,7 @@ Transform:
   m_Children:
   - {fileID: 1175287342}
   m_Father: {fileID: 1124574667}
-  m_RootOrder: 120
+  m_RootOrder: 117
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &879039747
 AudioSource:
@@ -35104,14 +35119,14 @@ Transform:
   - {fileID: 1543511115}
   - {fileID: 1668633370}
   - {fileID: 1197247601}
+  - {fileID: 879039746}
   - {fileID: 1035394388}
   - {fileID: 199547292}
   - {fileID: 312629619}
-  - {fileID: 879039746}
-  - {fileID: 627671211}
   - {fileID: 1650401867}
-  - {fileID: 1352049805}
+  - {fileID: 627671211}
   - {fileID: 1129578546}
+  - {fileID: 1352049805}
   - {fileID: 350013144}
   - {fileID: 1392415641}
   - {fileID: 1931713747}
@@ -35219,7 +35234,7 @@ Transform:
   m_Children:
   - {fileID: 997205703}
   m_Father: {fileID: 1124574667}
-  m_RootOrder: 124
+  m_RootOrder: 123
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1129578547
 AudioSource:
@@ -42604,6 +42619,11 @@ Prefab:
       propertyPath: speed
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 114305715965242990, guid: 1f41554e5c392304b998d5b3374348a6,
+        type: 2}
+      propertyPath: maxdistance
+      value: 25
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 136685140483213428, guid: 1f41554e5c392304b998d5b3374348a6, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 1f41554e5c392304b998d5b3374348a6, type: 2}
@@ -45572,6 +45592,11 @@ Prefab:
         type: 2}
       propertyPath: speed
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114305715965242990, guid: 1f41554e5c392304b998d5b3374348a6,
+        type: 2}
+      propertyPath: maxdistance
+      value: 25
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 136685140483213428, guid: 1f41554e5c392304b998d5b3374348a6, type: 2}
@@ -54092,7 +54117,7 @@ Transform:
   m_Children:
   - {fileID: 900878850}
   m_Father: {fileID: 1124574667}
-  m_RootOrder: 122
+  m_RootOrder: 121
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1650401868
 AudioSource:
@@ -63147,7 +63172,7 @@ Transform:
   m_PrefabParentObject: {fileID: 400098, guid: 6713036011a5a433fab56176edf3b0e6, type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1926826468}
-  m_LocalRotation: {x: -0.3190098, y: 0.63105685, z: 0.63105685, w: 0.3190098}
+  m_LocalRotation: {x: -0.31900984, y: 0.6310569, z: 0.6310569, w: 0.31900984}
   m_LocalPosition: {x: 109.88372, y: 1.8022119, z: -19.847708}
   m_LocalScale: {x: 0.046673775, y: 0.046673775, z: 0.046673775}
   m_Children: []
