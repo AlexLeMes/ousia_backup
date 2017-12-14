@@ -4,26 +4,39 @@ using UnityEngine;
 
 public class pickups : MonoBehaviour {
 
-    GameObject _player;
-    public character _character;
+    [Header("PICKUP TYPE")]
+    public bool healthPickup = false;
+    public bool ammoPickup = false;
+    public bool keycard = false;
 
+    [Space(10)]
 
-    private keycard _keycard;
-
+    [Header("PICKUP STATS")]
     public float healAmmount = 0;
     public int ammoType = 0; // 0 = gas   --- plasma is infinite, so no ID for it
     public int ammoToGive = 0;
     public int cardID;
 
-    public bool healthPickup = false;
-    public bool ammoPickup = false;
-    public bool keycard = false;
-   
+    [Space(10)]
+
+    [Header("PICKUP AUDIO")]
+    AudioSource pickupAudio;
+    public AudioClip pickupSound;
+
+    [Space(10)]
+
+    [Header("MISC")]
+    public character _character;
+    GameObject _player;
+    private keycard _keycard;
+
     public void Awake()
     {
         _player = GameObject.FindGameObjectWithTag("Player");
 
         _character = _player.GetComponent<character>();
+
+        pickupAudio = GetComponent<AudioSource>();
     }
 
 
@@ -32,6 +45,11 @@ public class pickups : MonoBehaviour {
         if (other.gameObject.tag == "Player")
         {
             Debug.Log("pickup - hit player");
+
+            if(pickupAudio != null)
+            {
+                pickupAudio.PlayOneShot(pickupSound);
+            }
 
             if (healthPickup)
             {
