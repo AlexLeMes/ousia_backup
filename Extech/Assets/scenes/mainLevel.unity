@@ -14069,17 +14069,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c692d5b3313cd740bc827d7e155bd71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterWeapon: {fileID: 0}
-  characterDeathMenu: {fileID: 0}
-  enemyDeathModel: {fileID: 0}
   MaxHealth: 100
   health: 1
   stamina: 1
   alive: 1
-  moveSpeed: 0
-  rotateSpeed: 0
-  weaponOneAmmo: 0
   characterHealthBar: {fileID: 0}
+  characterWeapon: {fileID: 0}
+  characterDeathMenu: {fileID: 0}
+  enemyDeathModel: {fileID: 0}
+  weaponOneAmmo: 0
   characterOnFire: 0
   fireDamageOverTime: 1
   burnTime: 5
@@ -14579,17 +14577,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c692d5b3313cd740bc827d7e155bd71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterWeapon: {fileID: 0}
-  characterDeathMenu: {fileID: 0}
-  enemyDeathModel: {fileID: 0}
   MaxHealth: 100
   health: 1
   stamina: 1
   alive: 1
-  moveSpeed: 0
-  rotateSpeed: 0
-  weaponOneAmmo: 0
   characterHealthBar: {fileID: 0}
+  characterWeapon: {fileID: 0}
+  characterDeathMenu: {fileID: 0}
+  enemyDeathModel: {fileID: 0}
+  weaponOneAmmo: 0
   characterOnFire: 0
   fireDamageOverTime: 1
   burnTime: 5
@@ -15604,12 +15600,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectivesText: Go to the training room and get the keycard for the door.
   objectiveCompleteText: 
-  isGiveTrigger: 1
-  isCompleteTrigger: 0
-  objectiveComplete: 0
-  isBombObjective: 0
   objectiveID: 1
   completedID: 0
+  isGiveTrigger: 1
+  isCompleteTrigger: 0
+  isBombObjective: 0
+  objectiveComplete: 0
   objectiveTime: 0
 --- !u!23 &481233141
 MeshRenderer:
@@ -15669,8 +15665,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 481233139}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 73.1, y: 1.92, z: -111.126}
-  m_LocalScale: {x: 2, y: 0.3557971, z: 4.7865853}
+  m_LocalPosition: {x: 73.1, y: 2.042, z: -111.126}
+  m_LocalScale: {x: 2, y: 0.53727555, z: 4.7865853}
   m_Children: []
   m_Father: {fileID: 350250278}
   m_RootOrder: 1
@@ -27803,17 +27799,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c692d5b3313cd740bc827d7e155bd71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterWeapon: {fileID: 0}
-  characterDeathMenu: {fileID: 0}
-  enemyDeathModel: {fileID: 0}
   MaxHealth: 100
   health: 1
   stamina: 1
   alive: 1
-  moveSpeed: 0
-  rotateSpeed: 0
-  weaponOneAmmo: 0
   characterHealthBar: {fileID: 0}
+  characterWeapon: {fileID: 0}
+  characterDeathMenu: {fileID: 0}
+  enemyDeathModel: {fileID: 0}
+  weaponOneAmmo: 0
   characterOnFire: 0
   fireDamageOverTime: 1
   burnTime: 5
@@ -30527,12 +30521,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectivesText: Activate the Self-Destruct button and get out!
   objectiveCompleteText: 
-  isGiveTrigger: 1
-  isCompleteTrigger: 0
-  objectiveComplete: 0
-  isBombObjective: 0
   objectiveID: 2
   completedID: 0
+  isGiveTrigger: 1
+  isCompleteTrigger: 0
+  isBombObjective: 0
+  objectiveComplete: 0
   objectiveTime: 0
 --- !u!23 &1091745642
 MeshRenderer:
@@ -36360,17 +36354,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c692d5b3313cd740bc827d7e155bd71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterWeapon: {fileID: 0}
-  characterDeathMenu: {fileID: 0}
-  enemyDeathModel: {fileID: 0}
   MaxHealth: 100
   health: 1
   stamina: 1
   alive: 1
-  moveSpeed: 0
-  rotateSpeed: 0
-  weaponOneAmmo: 0
   characterHealthBar: {fileID: 0}
+  characterWeapon: {fileID: 0}
+  characterDeathMenu: {fileID: 0}
+  enemyDeathModel: {fileID: 0}
+  weaponOneAmmo: 0
   characterOnFire: 0
   fireDamageOverTime: 1
   burnTime: 5
@@ -39806,7 +39798,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1320432225}
   m_LocalRotation: {x: -0, y: -1, z: -0, w: 0.0000029504295}
-  m_LocalPosition: {x: 2.41, y: 0.94, z: 5.96}
+  m_LocalPosition: {x: 2.41, y: -23.06, z: 5.96}
   m_LocalScale: {x: 33.736977, y: 3, z: 5}
   m_Children: []
   m_Father: {fileID: 350250278}
@@ -39825,12 +39817,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectivesText: 'OBJECTIVE: Go to the training room and find the keycard.'
   objectiveCompleteText: first objective done!
-  isGiveTrigger: 0
-  isCompleteTrigger: 0
-  objectiveComplete: 0
-  isBombObjective: 0
   objectiveID: 0
   completedID: 1
+  isGiveTrigger: 0
+  isCompleteTrigger: 0
+  isBombObjective: 0
+  objectiveComplete: 0
   objectiveTime: 0
 --- !u!1001 &1320583774
 Prefab:
@@ -40573,6 +40565,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   objectToLookAt: {fileID: 1637399160}
+  target: {x: 0, y: 0, z: 0}
 --- !u!1001 &1342748626
 Prefab:
   m_ObjectHideFlags: 0
@@ -40989,32 +40982,32 @@ Prefab:
     - target: {fileID: 224263520459730840, guid: d18620c61f3efb042b411bc3dd2107ba,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 224263520459730840, guid: d18620c61f3efb042b411bc3dd2107ba,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224157566471969166, guid: d18620c61f3efb042b411bc3dd2107ba,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.4
       objectReference: {fileID: 0}
     - target: {fileID: 224157566471969166, guid: d18620c61f3efb042b411bc3dd2107ba,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224824932666141118, guid: d18620c61f3efb042b411bc3dd2107ba,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.01
       objectReference: {fileID: 0}
     - target: {fileID: 224824932666141118, guid: d18620c61f3efb042b411bc3dd2107ba,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d18620c61f3efb042b411bc3dd2107ba, type: 2}
@@ -41762,17 +41755,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c692d5b3313cd740bc827d7e155bd71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterWeapon: {fileID: 0}
-  characterDeathMenu: {fileID: 0}
-  enemyDeathModel: {fileID: 0}
   MaxHealth: 100
   health: 1
   stamina: 1
   alive: 1
-  moveSpeed: 0
-  rotateSpeed: 0
-  weaponOneAmmo: 0
   characterHealthBar: {fileID: 0}
+  characterWeapon: {fileID: 0}
+  characterDeathMenu: {fileID: 0}
+  enemyDeathModel: {fileID: 0}
+  weaponOneAmmo: 0
   characterOnFire: 0
   fireDamageOverTime: 1
   burnTime: 5
@@ -58419,56 +58410,21 @@ Prefab:
       propertyPath: m_RootOrder
       value: 17
       objectReference: {fileID: 0}
-    - target: {fileID: 114849389114391654, guid: 295ede1845e545b4f8683320daf43f2a,
+    - target: {fileID: 114857720431531950, guid: 295ede1845e545b4f8683320daf43f2a,
         type: 2}
-      propertyPath: plasmaInUse.Array.data[0]
+      propertyPath: playerSensBar
       value: 
-      objectReference: {fileID: 693220684}
-    - target: {fileID: 114849389114391654, guid: 295ede1845e545b4f8683320daf43f2a,
+      objectReference: {fileID: 1773315245}
+    - target: {fileID: 114137592297515166, guid: 295ede1845e545b4f8683320daf43f2a,
         type: 2}
-      propertyPath: plasmaInUse.Array.data[1]
+      propertyPath: characterDeathMenu
       value: 
-      objectReference: {fileID: 325037664}
-    - target: {fileID: 114849389114391654, guid: 295ede1845e545b4f8683320daf43f2a,
+      objectReference: {fileID: 1044821955}
+    - target: {fileID: 114137592297515166, guid: 295ede1845e545b4f8683320daf43f2a,
         type: 2}
-      propertyPath: fireInUse.Array.data[0]
+      propertyPath: characterHealthBar
       value: 
-      objectReference: {fileID: 659034284}
-    - target: {fileID: 114849389114391654, guid: 295ede1845e545b4f8683320daf43f2a,
-        type: 2}
-      propertyPath: fireInUse.Array.data[1]
-      value: 
-      objectReference: {fileID: 1444024785}
-    - target: {fileID: 114849389114391654, guid: 295ede1845e545b4f8683320daf43f2a,
-        type: 2}
-      propertyPath: gasBar
-      value: 
-      objectReference: {fileID: 384218706}
-    - target: {fileID: 114849389114391654, guid: 295ede1845e545b4f8683320daf43f2a,
-        type: 2}
-      propertyPath: gasBarObj
-      value: 
-      objectReference: {fileID: 384218704}
-    - target: {fileID: 114849389114391654, guid: 295ede1845e545b4f8683320daf43f2a,
-        type: 2}
-      propertyPath: powerAttackBar
-      value: 
-      objectReference: {fileID: 466514723}
-    - target: {fileID: 114849389114391654, guid: 295ede1845e545b4f8683320daf43f2a,
-        type: 2}
-      propertyPath: powerAttackBarObj
-      value: 
-      objectReference: {fileID: 466514724}
-    - target: {fileID: 114905348432434564, guid: 295ede1845e545b4f8683320daf43f2a,
-        type: 2}
-      propertyPath: staminaBar
-      value: 
-      objectReference: {fileID: 466514721}
-    - target: {fileID: 114905348432434564, guid: 295ede1845e545b4f8683320daf43f2a,
-        type: 2}
-      propertyPath: camera
-      value: 
-      objectReference: {fileID: 2067488731}
+      objectReference: {fileID: 466514722}
     - target: {fileID: 114790999129321556, guid: 295ede1845e545b4f8683320daf43f2a,
         type: 2}
       propertyPath: explosionCamera
@@ -58499,21 +58455,56 @@ Prefab:
       propertyPath: successMenu
       value: 
       objectReference: {fileID: 313295378}
-    - target: {fileID: 114137592297515166, guid: 295ede1845e545b4f8683320daf43f2a,
+    - target: {fileID: 114905348432434564, guid: 295ede1845e545b4f8683320daf43f2a,
         type: 2}
-      propertyPath: characterDeathMenu
+      propertyPath: staminaBar
       value: 
-      objectReference: {fileID: 1044821955}
-    - target: {fileID: 114137592297515166, guid: 295ede1845e545b4f8683320daf43f2a,
+      objectReference: {fileID: 466514721}
+    - target: {fileID: 114905348432434564, guid: 295ede1845e545b4f8683320daf43f2a,
         type: 2}
-      propertyPath: characterHealthBar
+      propertyPath: camera
       value: 
-      objectReference: {fileID: 466514722}
-    - target: {fileID: 114857720431531950, guid: 295ede1845e545b4f8683320daf43f2a,
+      objectReference: {fileID: 2067488731}
+    - target: {fileID: 114849389114391654, guid: 295ede1845e545b4f8683320daf43f2a,
         type: 2}
-      propertyPath: playerSensBar
+      propertyPath: plasmaInUse.Array.data[0]
       value: 
-      objectReference: {fileID: 1773315245}
+      objectReference: {fileID: 693220684}
+    - target: {fileID: 114849389114391654, guid: 295ede1845e545b4f8683320daf43f2a,
+        type: 2}
+      propertyPath: plasmaInUse.Array.data[1]
+      value: 
+      objectReference: {fileID: 325037664}
+    - target: {fileID: 114849389114391654, guid: 295ede1845e545b4f8683320daf43f2a,
+        type: 2}
+      propertyPath: powerAttackBar
+      value: 
+      objectReference: {fileID: 466514723}
+    - target: {fileID: 114849389114391654, guid: 295ede1845e545b4f8683320daf43f2a,
+        type: 2}
+      propertyPath: powerAttackBarObj
+      value: 
+      objectReference: {fileID: 466514724}
+    - target: {fileID: 114849389114391654, guid: 295ede1845e545b4f8683320daf43f2a,
+        type: 2}
+      propertyPath: fireInUse.Array.data[0]
+      value: 
+      objectReference: {fileID: 659034284}
+    - target: {fileID: 114849389114391654, guid: 295ede1845e545b4f8683320daf43f2a,
+        type: 2}
+      propertyPath: fireInUse.Array.data[1]
+      value: 
+      objectReference: {fileID: 1444024785}
+    - target: {fileID: 114849389114391654, guid: 295ede1845e545b4f8683320daf43f2a,
+        type: 2}
+      propertyPath: gasBar
+      value: 
+      objectReference: {fileID: 384218706}
+    - target: {fileID: 114849389114391654, guid: 295ede1845e545b4f8683320daf43f2a,
+        type: 2}
+      propertyPath: gasBarObj
+      value: 
+      objectReference: {fileID: 384218704}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 295ede1845e545b4f8683320daf43f2a, type: 2}
   m_IsPrefabParent: 0
@@ -59395,12 +59386,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectivesText: 
   objectiveCompleteText: Keycard found. Head to the door and open it.
-  isGiveTrigger: 0
-  isCompleteTrigger: 1
-  objectiveComplete: 0
-  isBombObjective: 0
   objectiveID: 0
   completedID: 1
+  isGiveTrigger: 0
+  isCompleteTrigger: 1
+  isBombObjective: 0
+  objectiveComplete: 0
   objectiveTime: 0
 --- !u!114 &1918002681
 MonoBehaviour:
@@ -61436,17 +61427,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c692d5b3313cd740bc827d7e155bd71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterWeapon: {fileID: 0}
-  characterDeathMenu: {fileID: 0}
-  enemyDeathModel: {fileID: 0}
   MaxHealth: 100
   health: 1
   stamina: 1
   alive: 1
-  moveSpeed: 0
-  rotateSpeed: 0
-  weaponOneAmmo: 0
   characterHealthBar: {fileID: 0}
+  characterWeapon: {fileID: 0}
+  characterDeathMenu: {fileID: 0}
+  enemyDeathModel: {fileID: 0}
+  weaponOneAmmo: 0
   characterOnFire: 0
   fireDamageOverTime: 1
   burnTime: 5
@@ -62917,17 +62906,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c692d5b3313cd740bc827d7e155bd71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterWeapon: {fileID: 0}
-  characterDeathMenu: {fileID: 0}
-  enemyDeathModel: {fileID: 0}
   MaxHealth: 100
   health: 1
   stamina: 1
   alive: 1
-  moveSpeed: 0
-  rotateSpeed: 0
-  weaponOneAmmo: 0
   characterHealthBar: {fileID: 0}
+  characterWeapon: {fileID: 0}
+  characterDeathMenu: {fileID: 0}
+  enemyDeathModel: {fileID: 0}
+  weaponOneAmmo: 0
   characterOnFire: 0
   fireDamageOverTime: 1
   burnTime: 5
@@ -63233,17 +63220,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c692d5b3313cd740bc827d7e155bd71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterWeapon: {fileID: 0}
-  characterDeathMenu: {fileID: 0}
-  enemyDeathModel: {fileID: 0}
   MaxHealth: 100
   health: 1
   stamina: 1
   alive: 1
-  moveSpeed: 0
-  rotateSpeed: 0
-  weaponOneAmmo: 0
   characterHealthBar: {fileID: 0}
+  characterWeapon: {fileID: 0}
+  characterDeathMenu: {fileID: 0}
+  enemyDeathModel: {fileID: 0}
+  weaponOneAmmo: 0
   characterOnFire: 0
   fireDamageOverTime: 1
   burnTime: 5
@@ -63402,17 +63387,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7c692d5b3313cd740bc827d7e155bd71, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  characterWeapon: {fileID: 0}
-  characterDeathMenu: {fileID: 0}
-  enemyDeathModel: {fileID: 0}
   MaxHealth: 100
   health: 1
   stamina: 1
   alive: 1
-  moveSpeed: 0
-  rotateSpeed: 0
-  weaponOneAmmo: 0
   characterHealthBar: {fileID: 0}
+  characterWeapon: {fileID: 0}
+  characterDeathMenu: {fileID: 0}
+  enemyDeathModel: {fileID: 0}
+  weaponOneAmmo: 0
   characterOnFire: 0
   fireDamageOverTime: 1
   burnTime: 5
@@ -64057,12 +64040,12 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   objectivesText: SELF DESTRUCT ACITVATED!
   objectiveCompleteText: 
-  isGiveTrigger: 1
-  isCompleteTrigger: 0
-  objectiveComplete: 0
-  isBombObjective: 1
   objectiveID: 3
   completedID: 0
+  isGiveTrigger: 1
+  isCompleteTrigger: 0
+  isBombObjective: 1
+  objectiveComplete: 0
   objectiveTime: 120
 --- !u!23 &2115803853
 MeshRenderer:

@@ -5,71 +5,74 @@ using UnityEngine.UI;
 
 public class weapon : MonoBehaviour {
 
+    Bullet _bullet;
+    GameObject _player;
+    GameObject plasmashot;
+    GameObject flameShot;
+    Rigidbody plasmarb;
+    Rigidbody flameBulletRB;
+    bool canUseFlamethrower;
+    bool showAmmo = false;
+
+    [Header("ANIMATIONS")]
     public Animator weaponAnim;
     bool animShoot = false;
-    GameObject _player;
+    
+    [Space(10)]
 
-
+    [Header("AUDIO")]
     AudioSource weaponAudio;
     public AudioSource flamethrowerAudioSource;
-    //AudioClip shootingSound;
     public AudioClip plasmaSFX;
     public AudioClip flameSFX;
+    [Space(10)]
 
-    Bullet _bullet;
-
-    public bool flamethrower;
-
-    public float powerattacktimer = 0;
-
+    [Header("PLASMA GUN")]
     public GameObject[] plasmaInUse;
-    public GameObject[] fireInUse;
-
-    public bool ischarging = false;
-    public bool flamethrowerpicked = false;
-    public bool canShoot = true;
-
-    public int maxGas;
-    public int gas;
-    public Slider gasBar;
-    public GameObject gasBarObj;
-
     public GameObject plasma;
-    public GameObject plasmaSpecial;
+    public float force;
+    public bool plasmaWeaponActive;
+    [Space(10)]
 
-    public float powerattack;
-    public float maxPowerattack;
+
+    [Header("PLASMA POWER UP")]
+    public GameObject plasmaSpecial;
     public Slider powerAttackBar;
     public GameObject powerAttackBarObj;
     public float powerAttackCanUseValue;
     public float powerAttackChargeRate;
+    public float powerattacktimer = 0;
+    public bool ischarging = false;
+    public float powerattack;
+    public float maxPowerattack;
+    [Space(10)]
 
+
+    [Header("FLAMETHROWER")]
+    public bool flamethrower;
+    public GameObject[] fireInUse;
+    public int maxGas;
+    public int gas;
+    public Slider gasBar;
+    public GameObject gasBarObj;
     public GameObject flameBullet;
     public GameObject flamethrowerLight;
-
-    GameObject plasmashot;
-    GameObject flameShot;
-
-    public Vector3 weaponpos;
-    public ParticleSystem flame;
-
-    Rigidbody plasmarb;
-    Rigidbody flameBulletRB;
-
-    public float force;
     public float flameForce;
-    
-    public bool plasmaWeaponActive;
+    [Space(10)]
 
+    [Header("PARTICLE EFFECTS")]
+    public ParticleSystem flame;
     public ParticleSystem chargingEffect;
     public ParticleSystem shootingPlasmaEffect;
 
-    bool canUseFlamethrower;
+    [Space(10)]
 
-    bool showAmmo = false;
+    [Header("WEAPON MISC")]
+    public bool canShoot = true;
+    public Vector3 weaponpos;
 
+    //public bool flamethrowerpicked = false;
 
-    // Use this for initialization
     void Start()
     {
         _player = GameObject.FindGameObjectWithTag("Player");
@@ -95,8 +98,6 @@ public class weapon : MonoBehaviour {
         powerAttackBarObj.SetActive(true);
         gasBarObj.SetActive(false);
 
-        //currentWeapon.text = "Press '2' for Flamethrower";
-
         gasBar.maxValue = maxGas;
         gasBar.value = gas;
 
@@ -119,7 +120,7 @@ public class weapon : MonoBehaviour {
         }
 
 
-        if (Input.GetMouseButton(1) && plasmaWeaponActive && canShoot) //starts the timer for charging the plasma weapon
+        if (Input.GetMouseButton(1) && plasmaWeaponActive && canShoot)
         {
             chargingEffect.Emit(5);
             powerattacktimer += Time.deltaTime * powerAttackChargeRate;

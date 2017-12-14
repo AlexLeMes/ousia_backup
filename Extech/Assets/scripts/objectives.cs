@@ -5,6 +5,9 @@ using UnityEngine.UI;
 
 public class objectives : MonoBehaviour {
 
+
+    //OLD AND UNSED
+
     public GameObject explosionCamera;
     public GameObject playerCamera;
 
@@ -21,7 +24,6 @@ public class objectives : MonoBehaviour {
 
     public int currentObjectiveID = 0;
 
-    //public GameObject explostion;
     public ParticleSystem explosionEffect;
     public GameObject successMenu;
 
@@ -29,7 +31,6 @@ public class objectives : MonoBehaviour {
 
     private void Awake()
     {
-        //explostion.SetActive(false);
         explosionCamera.SetActive(false);
         playerCamera.SetActive(true);
         successMenu.SetActive(false);
@@ -84,7 +85,6 @@ public class objectives : MonoBehaviour {
         bombObjectiveActive = false;
 
         successMenu.SetActive(true);
-        // manger set time scale to 0 here
     }
 
     public void updateObjective(string objectiveText, int id)
@@ -105,13 +105,10 @@ public class objectives : MonoBehaviour {
 
     private void OnTriggerEnter(Collider other)
     {
-        //bool status = false;
 
         if(other.gameObject.tag == "objective")
         {
             _objectiveTrigger = other.gameObject.GetComponent<triggerObjective>();
-
-            //status = true;
 
             if (_objectiveText != null)
             {

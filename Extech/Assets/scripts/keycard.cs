@@ -14,7 +14,7 @@ public class keycard : MonoBehaviour {
 
     public int[] storedCards;
     int storedCardPos = 0;
-    int totalMapCards = 5;  // change this to find all keycards in scene and set as length
+    int totalMapCards = 5;
 
     private void Start()
     {

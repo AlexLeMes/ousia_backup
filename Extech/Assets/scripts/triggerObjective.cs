@@ -7,23 +7,26 @@ public class triggerObjective : MonoBehaviour {
     GameObject player;
     objectives _objectvies;
 
+    int playerObjectiveID = 0;
+
+    [Header("OBJECTIVE STATS")]
     public string objectivesText;
     public string objectiveCompleteText;
 
-    public bool isGiveTrigger = false;
-    public bool isCompleteTrigger = false;
-   
-
-    public bool objectiveComplete = false;
-
-    public bool isBombObjective = false;
-
     public int objectiveID = 0;
     public int completedID = 1;
+    [Space(10)]
 
-    int playerObjectiveID = 0;
+    [Header("OBJECTIVE TYPE")]
+    public bool isGiveTrigger = false;
+    public bool isCompleteTrigger = false;
+    public bool isBombObjective = false;
+    [Space(10)]
 
+    [Header("OBJECTIVE STATUS")]
+    public bool objectiveComplete = false;
     public float objectiveTime = 0f;
+
 
     private void Start()
     {

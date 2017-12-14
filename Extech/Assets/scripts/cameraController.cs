@@ -4,10 +4,6 @@ using UnityEngine;
 
 public class cameraController : MonoBehaviour
 {
-    /*
-        TODO:
-           
-    */
 
     GameObject player;
     Transform pTrans;

@@ -5,11 +5,6 @@ using UnityEngine.UI;
 
 public class triggerEndGame : MonoBehaviour {
 
-    //public GameObject winMenu;
-
-    //public Text playerTimeText;
-    //public float playerTime;
-
     public GameObject gameWonMenu;
     public GameObject animatedDropShip;
     public GameObject staticDropShip;

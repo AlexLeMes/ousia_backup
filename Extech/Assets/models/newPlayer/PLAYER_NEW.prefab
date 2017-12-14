@@ -844,7 +844,6 @@ GameObject:
   - component: {fileID: 4380440496869412}
   - component: {fileID: 33336796347638828}
   - component: {fileID: 23981593304198008}
-  - component: {fileID: 114180921247414960}
   - component: {fileID: 114849389114391654}
   - component: {fileID: 82750154992975990}
   - component: {fileID: 82620057168654970}
@@ -2700,20 +2699,6 @@ MonoBehaviour:
   fireDamageOverTime: 0
   burnTime: 0
   burnTickRate: 0
---- !u!114 &114180921247414960
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1679202350207576}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a66eb2b88411d9c4f926524c103cacad, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  player: {fileID: 0}
-  target: {x: 0, y: 0, z: 0}
-  canShoot: 0
 --- !u!114 &114790999129321556
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -2752,40 +2737,39 @@ MonoBehaviour:
   flamethrowerAudioSource: {fileID: 82620057168654970}
   plasmaSFX: {fileID: 8300000, guid: b97854a8f05764646ad36437512e5a7b, type: 3}
   flameSFX: {fileID: 8300000, guid: 9cfd4293a720afc42b5126bb22483005, type: 3}
-  flamethrower: 0
-  powerattacktimer: 0
   plasmaInUse:
   - {fileID: 0}
   - {fileID: 0}
-  fireInUse:
-  - {fileID: 0}
-  - {fileID: 0}
-  ischarging: 0
-  flamethrowerpicked: 0
-  canShoot: 1
-  maxGas: 150
-  gas: 100
-  gasBar: {fileID: 0}
-  gasBarObj: {fileID: 0}
   plasma: {fileID: 1819649527317586, guid: a69974c61944f4741b76f0135295a367, type: 2}
+  force: 3000
+  plasmaWeaponActive: 0
   plasmaSpecial: {fileID: 1712333969612450, guid: fe7d169fdbecd8e48b6b35bb03f15f59,
     type: 2}
-  powerattack: 0
-  maxPowerattack: 100
   powerAttackBar: {fileID: 0}
   powerAttackBarObj: {fileID: 0}
   powerAttackCanUseValue: 0
   powerAttackChargeRate: 85
+  powerattacktimer: 0
+  ischarging: 0
+  powerattack: 0
+  maxPowerattack: 100
+  flamethrower: 0
+  fireInUse:
+  - {fileID: 0}
+  - {fileID: 0}
+  maxGas: 150
+  gas: 100
+  gasBar: {fileID: 0}
+  gasBarObj: {fileID: 0}
   flameBullet: {fileID: 1711865773262750, guid: bef751d2816151e499a1955cbd0eef3f,
     type: 2}
   flamethrowerLight: {fileID: 1446642924146666}
-  weaponpos: {x: 0, y: 0, z: 0}
-  flame: {fileID: 198924369520072024}
-  force: 3000
   flameForce: 800
-  plasmaWeaponActive: 0
+  flame: {fileID: 198924369520072024}
   chargingEffect: {fileID: 198608575172568024}
   shootingPlasmaEffect: {fileID: 198541686631631280}
+  canShoot: 1
+  weaponpos: {x: 0, y: 0, z: 0}
 --- !u!114 &114857720431531950
 MonoBehaviour:
   m_ObjectHideFlags: 1

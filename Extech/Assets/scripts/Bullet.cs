@@ -40,21 +40,10 @@ public class Bullet : MonoBehaviour {
 
         if (other.gameObject.tag == "enemy")
         {
-            /*
-            _charater = other.gameObject.GetComponent<character>();
-
-            if (_charater != null)
-            {
-                hitEnemy();
-            }
-            */
-
-            //_charater = other.gameObject.GetComponent<character>();
             hitEnemy();
         }
         else if(other.gameObject.tag == "targetDummy" && isFire)
         {
-            //_charater = other.gameObject.GetComponent<character>();
             _charater.setOnFire(fireImpactEffect, burnTime, burnDamage, burnTickRate);
         }
 
@@ -67,16 +56,6 @@ public class Bullet : MonoBehaviour {
         {
             Destroy(this.gameObject);
         }
-
-        /*
-        else
-        {
-            if(other.gameObject.GetComponent<MeshRenderer>() != null && other.gameObject.GetComponent<MeshRenderer>().enabled && !isFire)
-            {
-                Instantiate(plasmaImpactEffect, transform.position, transform.rotation);
-            }
-        }
-        */
         
     }
 
@@ -91,8 +70,6 @@ public class Bullet : MonoBehaviour {
         {
             _charater.setOnFire(fireImpactEffect, burnTime, burnDamage, burnTickRate);
         }
-
-        //Destroy(this.gameObject);
     }
 
    

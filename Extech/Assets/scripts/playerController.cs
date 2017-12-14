@@ -5,56 +5,50 @@ using UnityEngine.UI;
 
 public class playerController : MonoBehaviour {
 
-    /*
-    TODO:
-        - set the player to only be able to move when
-        the mouse position is a certain distance away from the player
-*/
     mouseLookat _mouseLook;
     Rigidbody rb;
-    public weapon _weapon;
-    public Animator anim;
     float inputH = 0f;
     float inputV = 0f;
-
-    //PLAYER MOVE SPEED
     bool isMoving = false;
-    public float moveSpeed = 5f;
-    //public float rotateSpeed = 90f;
-    public float boostSpeed = 3f;
-    float maxSpeed = 10f;
-    float currentSpeed = 0f;
-    Vector3 direction;
-
-    bool canShoot = true;
-
-    //public Slider healthBar;
-    public Slider staminaBar;
-
-    cameraController _camera;
-    public GameObject camera;
-
-    float stamnia = 1f;
-    public float maxStam = 100f;
-
-    public float stamRegenAmount = 5f;
-    public float stamUsageAamount = 35f;
-
-    public float stamStopAmount = 5f;
-    public float stamCanBeUsedAmount = 1f;
 
     bool canMove = true;
     bool moving = false;
     bool canBoost = true;
     bool boosting = false;
-    //private pickups pickup;
+
+    float maxSpeed = 10f;
+    float currentSpeed = 0f;
+    Vector3 direction;
+
+    bool canShoot = true;
+    cameraController _camera;
+
+    [Header("SPEED VARIABLES")]
+    public float moveSpeed = 5f;
+    public float boostSpeed = 3f;
+    [Space(10)]
+
+    [Header("STAMINA")]
+    public float maxStam = 100f;
+    public float stamRegenAmount = 5f;
+    public float stamUsageAamount = 35f;
+    public float stamStopAmount = 5f;
+    public float stamCanBeUsedAmount = 1f;
+    public Slider staminaBar;
+    float stamnia = 1f;
+    [Space(10)]
+
+    [Header("MISC")]
+    public weapon _weapon;
+    public Animator anim;
+    //public GameObject camera;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody>();
         anim = GetComponent<Animator>();
         _mouseLook = GetComponent<mouseLookat>();
-        _camera = camera.GetComponent<cameraController>();
+        //_camera = camera.GetComponent<cameraController>();
 
         GetComponent<playerController>().enabled = true;
         _mouseLook.enabled = true;
@@ -63,7 +57,7 @@ public class playerController : MonoBehaviour {
         _weapon.enabled = true;
     }
 
-    private new void Start()
+    private void Start()
     {
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
@@ -93,42 +87,19 @@ public class playerController : MonoBehaviour {
             isMoving = false;
         }
 
+        //animation controller
         inputH = Input.GetAxis("Horizontal");
         inputV = Input.GetAxis("Vertical");
 
         anim.SetFloat("inputH", inputH);
         anim.SetFloat("inputV", inputV);
 
-        /*
-        if (Input.GetKey(KeyCode.W))
-        {
-            canBoost = true;
-            rb.velocity = (transform.rotation * Vector3.forward * currentSpeed * Time.deltaTime);
-        }
-        else
-        {
-            canBoost = false;
-        }
-        if (Input.GetKey(KeyCode.S))
-        {
-            rb.velocity = (transform.rotation * Vector3.back * currentSpeed * Time.deltaTime);
-        }
-        if (Input.GetKey(KeyCode.D))
-        {
-            rb.velocity = (transform.rotation * Vector3.right * currentSpeed * Time.deltaTime);
-        }
-        if (Input.GetKey(KeyCode.A))
-        {
-            rb.velocity = (transform.rotation * Vector3.left * currentSpeed * Time.deltaTime);
-        }
-        */
+
         //PLAYER KEY INPUT MOVEMENT//
-        
         if (Input.GetKey(KeyCode.W))
         {
             isMoving = true;
             canBoost = true;
-            //transform.Translate(Vector3.forward * currentSpeed * Time.deltaTime);
             transform.position += transform.forward * Time.deltaTime * currentSpeed;
         }
         else

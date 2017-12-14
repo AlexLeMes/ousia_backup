@@ -27,7 +27,6 @@ public class LoadingManager : MonoBehaviour {
 
         while (!operation.isDone)
         {
-            Debug.Log("loading");
             loadingBar.value = operation.progress;
             yield return null;
         }

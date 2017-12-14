@@ -5,38 +5,43 @@ using UnityEngine.UI;
 
 public class character : MonoBehaviour {
 
-    //TODO: FIX PLAYER CONTROLS STILL WORKING AFTER DEATH
-
-    public weapon characterWeapon;
-    public GameObject characterDeathMenu;
     cameraController _cameraControls;
 
     Behaviour_tree BT;
     Rigidbody enemyRB;
-    public GameObject enemyDeathModel;
+
     GameObject enemyModel;
-
-    public float MaxHealth = 100f;
-
-    public float health = 1f;
-    public float stamina = 1f;
-    public bool alive = true;
 
     bool isPlayer = false;
 
-    public float moveSpeed = 0f;
-    public float rotateSpeed = 0f;
-
-    public float weaponOneAmmo = 0;
-
-    public Slider characterHealthBar;
-
     GameObject fireDamageEffect;
 
+    [Header("STATS")]
+    public float MaxHealth = 100f;
+    public float health = 1f;
+    public float stamina = 1f;
+    public bool alive = true;
+    public Slider characterHealthBar;
+    [Space(10)]
+
+    [Header("PLAYER")]
+    public weapon characterWeapon;
+    public GameObject characterDeathMenu;
+
+    [Space(10)]
+
+    [Header("ENEMY")]
+    public GameObject enemyDeathModel;
+
+    [Space(10)]
+
+    [Header("WEAPON")]
+    public float weaponOneAmmo = 0;
     public bool characterOnFire = false;
     public float fireDamageOverTime = 1f;
     public float burnTime = 5f;
     public float burnTickRate = 1f;
+
 
     public void Start()
     {

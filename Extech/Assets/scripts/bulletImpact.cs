@@ -6,7 +6,7 @@ public class bulletImpact : MonoBehaviour {
 
     public GameObject imapctEffect;
 
-
+    //NO LONGER USED//
     private void OnTriggerEnter(Collider other)
     {
         if(other.gameObject.tag == "enemy")
