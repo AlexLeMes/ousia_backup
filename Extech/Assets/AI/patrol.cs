@@ -152,12 +152,6 @@ public class patrol : Node
             // BT.transform.position += BT.steeringforce;
             //Vector3.MoveTowards(BT.transform.position, BT.waypoints[BT.target].transform.position, BT.speed);
 
-
-
-
-
-
-
             // to move to the next waypoint we add to our target which is our index in the array
             if (Vector3.Distance(BT.transform.position, BT.waypoints[BT.target].transform.position) < BT.DISTANCETOWAYPOINT && !BT.isreverse)
             {
@@ -184,28 +178,13 @@ public class patrol : Node
 
             }
 
-
-
-
-
-
-
             else
             {
                 state = Node_State.faliure;
             }
 
 
-
-
-
-
-
-
-
         }
-
-
 
         else
         {
