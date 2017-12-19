@@ -95,7 +95,7 @@ public class Chase : Node
             {
                 Quaternion rot = Quaternion.LookRotation(dir);
                 //our rotation will go from our initial rotation to our rot by time.deltatime
-                BT.transform.rotation = Quaternion.Slerp(BT.transform.rotation, rot, Time.deltaTime*0.5f);
+                BT.transform.rotation = Quaternion.Slerp(BT.transform.rotation, rot, Time.deltaTime*8);
                 //and then our postition will equal our transfrom.forward times our speed times our time.deltatime
                 BT.transform.position += BT.transform.forward * BT.chase * Time.deltaTime;
             }

@@ -2719,6 +2719,10 @@ Prefab:
       propertyPath: movespeed
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1176584776875656, guid: 1f41554e5c392304b998d5b3374348a6, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 136685140483213428, guid: 1f41554e5c392304b998d5b3374348a6, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 1f41554e5c392304b998d5b3374348a6, type: 2}
@@ -3052,6 +3056,10 @@ Prefab:
         type: 2}
       propertyPath: maxdistance
       value: 45
+      objectReference: {fileID: 0}
+    - target: {fileID: 1176584776875656, guid: 1f41554e5c392304b998d5b3374348a6, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 136685140483213428, guid: 1f41554e5c392304b998d5b3374348a6, type: 2}
@@ -3427,6 +3435,10 @@ Prefab:
         type: 2}
       propertyPath: maxdistance
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1238678459349386, guid: d1649a675295c3749b4e31ccc708c529, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 136594544698919210, guid: d1649a675295c3749b4e31ccc708c529, type: 2}
@@ -19688,6 +19700,10 @@ Prefab:
         type: 2}
       propertyPath: maxdistance
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1238678459349386, guid: d1649a675295c3749b4e31ccc708c529, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 136594544698919210, guid: d1649a675295c3749b4e31ccc708c529, type: 2}
@@ -39593,6 +39609,10 @@ Prefab:
       propertyPath: speed
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1238678459349386, guid: d1649a675295c3749b4e31ccc708c529, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 136594544698919210, guid: d1649a675295c3749b4e31ccc708c529, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: d1649a675295c3749b4e31ccc708c529, type: 2}
@@ -42412,6 +42432,10 @@ Prefab:
       propertyPath: m_Pivot.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1556910562998682, guid: 7b4adf5a78eb33a4fbce13cea9624857, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 7b4adf5a78eb33a4fbce13cea9624857, type: 2}
   m_IsPrefabParent: 0
@@ -42649,6 +42673,10 @@ Prefab:
       propertyPath: maxdistance
       value: 25
       objectReference: {fileID: 0}
+    - target: {fileID: 1176584776875656, guid: 1f41554e5c392304b998d5b3374348a6, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 136685140483213428, guid: 1f41554e5c392304b998d5b3374348a6, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 1f41554e5c392304b998d5b3374348a6, type: 2}
@@ -42772,6 +42800,14 @@ Prefab:
         type: 2}
       propertyPath: waypoints.Array.data[4]
       value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1705926364434788, guid: fefc74eb50abb5a4b8901f5affa7ba11, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1607196031369802, guid: fefc74eb50abb5a4b8901f5affa7ba11, type: 2}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fefc74eb50abb5a4b8901f5affa7ba11, type: 2}
@@ -44565,6 +44601,10 @@ Prefab:
       propertyPath: m_AnchorMax.y
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1223027799056716, guid: d18620c61f3efb042b411bc3dd2107ba, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: d18620c61f3efb042b411bc3dd2107ba, type: 2}
   m_IsPrefabParent: 0
@@ -45622,6 +45662,10 @@ Prefab:
         type: 2}
       propertyPath: maxdistance
       value: 25
+      objectReference: {fileID: 0}
+    - target: {fileID: 1176584776875656, guid: 1f41554e5c392304b998d5b3374348a6, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 136685140483213428, guid: 1f41554e5c392304b998d5b3374348a6, type: 2}
@@ -53432,7 +53476,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1603063036
 Transform:
   m_ObjectHideFlags: 0
@@ -59458,6 +59502,10 @@ Prefab:
         type: 2}
       propertyPath: maxdistance
       value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1238678459349386, guid: d1649a675295c3749b4e31ccc708c529, type: 2}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 136594544698919210, guid: d1649a675295c3749b4e31ccc708c529, type: 2}
